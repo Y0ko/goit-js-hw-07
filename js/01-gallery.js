@@ -9,10 +9,7 @@ const onGalaryItems = galleryItems
     ({ preview, original, description }) =>
       `<div class = "gallery__item">
     <a class = "gallery_link" href=${original}>
-    <img class= "gallery___image" src = "${preview}"
-    data-source = "${original}"
-    alt = "${description}"
-    \>
+    <img class= "gallery__image" src = "${preview}" data-source = "${original}"alt = "${description}"\>
     </a>
     </div>`
   )
@@ -37,4 +34,4 @@ function showImage(event) {
     .show();
 }
 
-console.log(galleryItems);
+// console.log(galleryItems);
